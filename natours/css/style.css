@@ -368,7 +368,7 @@ body {
   transform: translateY(-4rem); }
 
 .form__radio-input {
-  opacity: 0; }
+  display: none; }
 
 .form__radio-group {
   width: 49%;
