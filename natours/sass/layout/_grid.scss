@@ -11,6 +11,11 @@
 
     }
 
+    @include respond(tab-port) {
+        max-width: $grid-width-small;
+        padding: 0 2rem;
+    }
+
     @include clearfix;
 
     //Attribute 
