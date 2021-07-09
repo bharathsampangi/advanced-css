@@ -86,19 +86,25 @@
                     <div class="col-1-of-2">
                         <div class="composition">
                             <img
-                                src="img/nat-1-large.jpg"
-                                alt="Photo-1"
+                                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                                sizes="(max-width: 56.25em) 16vw, (max-width: 37.5em) 24vw, 300px"
+                                alt="Photo 1"
                                 class="composition__photo composition__photo--p1"
+                                src="img/nat-1-large.jpg"
                             />
                             <img
-                                src="img/nat-2-large.jpg"
-                                alt="Photo-2"
+                                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                                sizes="(max-wid56.25em) 16w, (max-width: 37.5em) 24vw, 300px"
+                                alt="Photo 2"
                                 class="composition__photo composition__photo--p2"
+                                src="img/nat-2-large.jpg"
                             />
                             <img
-                                src="img/nat-3-large.jpg"
-                                alt="Photo-3"
+                                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                                sizes="(max-wid56.25em) 16w, (max-width: 37.5em) 24vw, 300px"
+                                alt="Photo 3"
                                 class="composition__photo composition__photo--p3"
+                                src="img/nat-3-large.jpg"
                             />
                         </div>
                     </div>
@@ -255,7 +261,12 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="./img/nat-8.jpg" alt="Person on a boat" class="story__img" />
+                            <img srcset="img/nat-8-small.jpg 600w, img/nat-8.jpg 2000w"
+                                sizes="(max-width: 56.25em) 27vw, (max-width: 37.5em) 42vw"
+                                alt="Person on a boat"
+                                class="story__img"
+                                src="./img/nat-8.jpg"
+                            >
                             <figcaption class="story__caption">Mary Smith</figcaption>
                         </figure>
                         <div class="story__text">
@@ -274,7 +285,12 @@
                 <div class="row">
                     <div class="story">
                         <figure class="story__shape">
-                            <img src="./img/nat-9.jpg" alt="Person on a tour" class="story__img" />
+                            <img srcset="img/nat-9-small.jpg 600w, img/nat-9.jpg 2000w"
+                                sizes="(max-width: 56.25em) 27vw, (max-width: 37.5em) 42vw"
+                                alt="Person on a tour"
+                                class="story__img"
+                                src="./img/nat-9.jpg"
+                            >
                             <figcaption class="story__caption">Jack Wilson</figcaption>
                         </figure>
                         <div class="story__text">
@@ -349,7 +365,13 @@
 
         <footer class="footer">
             <div class="footer__logo-box">
-                <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+                <picture class="footer__logo">
+                    <source
+                        srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x"
+                        media="(max-width: 37.5em)"
+                    />
+                    <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" />
+                </picture>
             </div>
             <div class="row">
                 <div class="col-1-of-2">
@@ -390,7 +412,9 @@
                 <div class="popup__right">
                     <a href="#section-tours" class="popup__close">&times;</a>
                     <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
-                    <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read the terms and conditions first</h3>
+                    <h3 class="heading-tertiary u-margin-bottom-small">
+                        Important &ndash; Please read the terms and conditions first
+                    </h3>
                     <p class="popup__text u-margin-bottom-medium">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce porttitor felis eu tincidunt
                         vulputate. Ut non pellentesque justo. Mauris elementum aliquam congue. Morbi fermentum mattis
