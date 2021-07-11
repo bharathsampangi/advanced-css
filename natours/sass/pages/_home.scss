@@ -16,7 +16,7 @@
     transform: skewY(-7deg);
     margin-top: -10rem;
 
-    @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
     (min-width: 125em) {
         background-image: linear-gradient(to bottom right, rgba($color-secondary-light, .8), rgba($color-secondary-dark, .8)),
         url('../img/nat-4.jpg')
